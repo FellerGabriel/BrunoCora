@@ -1,0 +1,632 @@
+@media only screen and (max-width: 1400px) {
+    .blog_search_content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+    }
+    
+    #search_buttom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog_search_content input.search,
+    .blog_search_content h2, 
+    .blog_search_content h1{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 95%;
+    }
+
+    .entenda_consultoria .entenda_single{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .trinta_dias{
+        align-items: initial;
+    }
+
+    .trinta_dias .trinta_dias_bloco1 p{
+        font-size: 27px;
+    }
+
+    .trinta_dias .trinta_dias_bloco1 a{
+        font-size: 20px;
+    }
+
+
+    .depoimento_single p{
+        font-size: 22px;
+    }
+
+    .blog_content li.single_post{
+        max-width: 100%;
+        width: 100%;
+    }
+   
+
+  
+}
+
+@media only screen and (max-width: 1024px) {
+    .header{
+        display: none;
+    }
+
+    .header_mobile{
+        display: block;
+    }
+
+    .header-container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seta.seta_depoimentos.prev{
+        left: 0;
+    }
+    .seta.seta_depoimentos.next{
+        right: 0;
+    }
+
+    .icon_menu_mobile{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        left: 20px;
+    }
+
+    .menu_mobile{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #0f0f0f;
+        z-index: 2;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.5s cubic-bezier(0.17, 0.91, 1, 1);
+        left: -100%;
+    }
+
+    .menu_mobile ul li{
+        padding-bottom: 10px;
+    }
+
+    .menu_mobile ul li.consultoria a{
+        color: #99d236;
+    }
+    
+    .menu_mobile ul li.area_aluno a{
+        color: #ef434b;
+    }
+    
+    .menu_mobile ul li.comecar_agora a{
+        padding: 5px 9px;
+        border: 1px solid;
+    }
+    
+    .menu_mobile ul li a{
+        font-family: 'Myriad Pro Regular';
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .close_menu{
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 768px) {  
+    
+    .logo img{
+        max-width: 130px;
+    }
+    
+    .slides ul .imagem_mobile{
+        display: block;
+    }
+
+    .bg_header{
+        height: 135px;
+    }
+
+    .imagem_desktop{
+        display: none;
+    }
+
+    .slides ul .botao_quero{
+        display: none;
+    }
+
+    .newsletter{
+        margin-top: 0px
+    }
+
+    .texto_newsletter{
+        margin: 15px 0 13px 0;
+    }
+
+    .form_newsletter{
+        height: auto;
+        background-color: #f7f7f7;
+        flex-direction: column
+    }
+    
+    .fields_newsletter{
+        flex-direction: column;
+        width: 90%;
+        margin: 0px;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    
+    .form_newsletter .submit_newsletter,
+    .form_newsletter input{
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 9px;
+        font-size: 11px;
+        color: #999999;
+    }
+
+    .texto_newsletter{
+        color: #212121;
+        font-family: 'Roboto', sans-serif; 
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.45px;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+    }
+
+    .texto_newsletter strong{
+        color: #ef434b;
+    }
+
+
+    .form_newsletter .submit_newsletter{
+        color: #ffffff;
+        margin: auto;
+        max-width: 180px;
+        position: absolute;
+        bottom: -15px;
+        right: -50%;
+        left: -50%;        
+    }
+
+    .bonus_mobile{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 25px;
+    }
+
+    .trinta_dias_mobile,
+    .entenda_mobile{
+        display: block;
+    }
+
+    .entenda_mobile{
+        margin-top: 35px;
+    }
+
+    .seta.next.seta_consultoria{
+        display: none;
+    }
+
+    .trinta_dias_desktop,
+    .bonus_desktop,
+    .entenda_desktop{
+        display: none;
+    }
+    
+    .slick-dots li,
+    .slick-dots li button{
+        width: 15px;
+        height: 15px;
+    }
+
+    .slick-dots{
+        bottom: 0px;
+    }
+
+    .entenda_consultoria h2{
+        font-size: 17px;
+        margin-bottom: 15px;
+        font-family: 'Roboto', sans-serif; 
+    }
+
+    .bonus_each{
+        width: 100%;
+        margin-bottom: 25px;
+        flex-direction: row;
+    }
+
+    .bonus_each:nth-child(odd){
+        justify-content: flex-start;
+    }
+
+    .bonus_each:nth-child(even){
+        justify-content: flex-end;
+    }
+
+
+    .trinta_dias{
+        padding: 0px;
+    }
+
+    .bg_30_dias{
+        background-color: inherit;
+    }
+    
+    .trinta_dias_bloco2{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .trinta_dias_bloco2 img{
+        max-width: 180px;
+        height: 140px;
+    }
+
+    .trinta_dias .trinta_dias_bloco1{
+        margin: 0px
+    }
+
+    .trinta_dias .trinta_dias_bloco1 p{
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+    .trinta_dias .trinta_dias_bloco1 p.texto_30_secundario{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .trinta_dias .trinta_dias_bloco1 a{
+        padding: 15px 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+
+    .depoimentos_bg h2{
+        padding: 18px 60px;
+        font-size: 14px;
+    }
+
+    .depoimento_single p{
+        display: none;
+    }
+
+    .depoimentos_bg{
+        margin-bottom: 30px;
+    }
+
+    .seta.seta_depoimentos.prev,    
+    .seta.seta_depoimentos.next{
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    .depoimentos{
+        padding-bottom: 20px;
+    }
+
+    .planos h2{
+        font-size: 17px;
+        margin-bottom: 15px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .planos .planos_itens{
+        display: block;
+    }
+
+    .planos .img_planos{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .planos .comprar_agora{
+        padding: 15px 10px;
+        margin-bottom: 0px;
+        font-size: 12px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+    }
+
+    .bg_faq{
+        margin-top: 100px;
+    }
+
+    .bg_faq h2{
+        font-size: 17px;
+        margin-bottom: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .perguntas_container{
+        font-size: 11px;
+        padding: 20px 25px;
+    }
+
+    .bg_faq .pergunta{
+        font-size: 14px;
+    }
+
+    .bg_faq .resposta{
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+    .bg_faq .comacar_faq{
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1.62px;
+        font-weight: 700;
+        margin-top: 0;
+        padding: 15px;
+    }
+    
+    footer .footer_container .info_contato form,
+    .copyright{
+        display: none;
+    }
+
+    footer .footer_container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .instagram_footer .titulo_instagram{
+        font-size: 12px;
+    }
+
+    .info_contato img{
+        max-width: 130px;
+    }
+
+    .info_contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer_container .info_contato a, footer .footer_container .info_contato p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 16px;
+        font-size: 10px;
+        max-width: 200px;
+        margin-top: 0px;
+    }
+
+    footer .footer_container .info_contato a{
+        color: #7ecd12;
+        font-weight: 700;
+        margin-top: 10px;
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+
+    .instagram_footer .ver_mais_insta{
+        color: #97cf35;
+        font-size: 11px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .instagram_footer{
+        text-align: right;
+    }
+
+    .instagram_footer .titulo_instagram{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        min-height: auto;
+    } 
+
+    .img_404{
+        max-width: 262px;
+    }
+
+    .container_404 input{
+        height: 30px;
+    }
+
+    .container_404 .input_email{
+        font-size: 10px;
+    }
+
+    .container_404 .input_submit{
+        max-width: 100px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .container_404 span{
+        font-size: 15px
+    }
+
+    .container_404 p{
+        font-size: 12px;
+    }
+    
+    .container_404 form{
+        padding: 0 10px;
+    }
+
+    .blog_posts{
+        width: 100%;
+    }
+    
+    .blog_sidebar .selo_blog,
+    .blog_sidebar .publicidade_img{
+        display: none;
+    }
+
+    .blog_sidebar{
+        background-color: none;
+        width: 100%;
+    }
+
+    .blog_categorias{
+        background-color: #f4f4f4;
+    }
+
+    .blog_sidebar{
+        position:absolute;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .categorias-mobile{
+        display: block;
+    }
+
+    .blog_search_content input.search{
+        min-width: auto;
+        width: 100%;
+    }
+
+    #search_buttom{
+        width: 100%;
+    }
+
+    .container_categorias{
+        padding: 30px 70px;
+    }
+
+    .container_buttom_search{
+        padding: 0px;
+    }
+
+    .categorias h2{
+        display: none;
+    }
+
+    .single_post .resumo_post{
+        padding: 0px;
+    }
+
+    .single_post .cont{
+        padding: 0 15px;
+    }
+
+    .categoria-mobile-container{
+        display: flex;
+        justify-content: center;   
+ 
+    }
+
+    .categorias-mobile{
+        color: #99d236;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin-top: 10px;
+        padding: 5px;
+        border-color: #99d236;
+    }
+
+    .blog_sidebar{
+        right: initial;
+        left: -100%;
+        transition: left 0.5s cubic-bezier(0.17, 0.91, 1, 1);
+        height: 100%;
+    }
+
+    .blog_content{
+        margin-top: 0px;
+    }
+
+    .close_categoria{
+        display: block;
+        text-align: right;
+        width: 100%;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 25px;
+    }
+
+    .logo img{
+        max-width: 200px;
+    }
+    
+    .blog_content{
+        margin-top: 10px;
+    }
+
+    .blog_search_content h2, 
+    .blog_search_content h1{
+        font-size: 20px;
+    }
+
+    .blog_search_content span{
+        font-size: 18px;
+    }
+
+    .blog_content .single_post{
+        width: 100%;
+    }
+
+    .blog_content .content p{
+        text-align: center;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 320px) {  
+    .planos .comprar_agora{
+        font-size: 11px;
+    }
+
+    .depoimentos_bg h2{
+        font-size: 13px;
+    }
+
+
+}
