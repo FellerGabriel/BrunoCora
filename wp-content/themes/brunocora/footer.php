@@ -13,7 +13,28 @@
             </form>
         </div>
         <div class="blog_footer">
-            
+            <?php 
+            $args = array(
+                'numberposts' => 3
+              );
+               
+              $latest_posts = get_posts( $args );
+            ?>
+            <h3 class="titulo_footer">Blog</h3>
+            <ul>            
+                <?php foreach($latest_posts as $post):?>
+                <a href="<?= $post->guid; ?>">
+                    <li class="post_footer">
+                        <?php
+                            $imgpost =  getImage($post->ID, 'thumb_blog');
+                            $titlepost = $post->post_title;
+                        ?>                     
+                        <img class="imgpost_footer" src="<?= $imgpost ?>" alt="">
+                        <h3 class="titlepost_footer"><?= $titlepost ?></h3>
+                    </li>
+                </a>
+                <?php endforeach ?>
+            </ul>
         </div>
         <div class="instagram_footer">
             <div class="base_instagram">
@@ -32,9 +53,9 @@
                     $instaFotos[] = array('link' => $link, 'img' => $img);
                 }
                 ?>
-                <div class="titulo_instagram">
+                <div class="titulo_footer">
                     <div class="container">
-                        <h1>instagram</h1>		
+                        <h3>instagram</h3>		
                     </div>		
                 </div>
                 <ul class="fotos_instagram">
