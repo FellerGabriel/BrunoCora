@@ -95,6 +95,10 @@ $idPg = get_queried_object_id();
             <?php foreach($bonus_array as $bonus): ?>
             <div class="bonus_each">
                 <img src="<?= $bonus['imagem_bonus_mobile']?>" alt="">                
+                <div class="bonus_each_text">
+                    <span class="titulo"><?= $bonus['titulo_bonus_mobile']?></span>
+                    <span class="texto"><?= $bonus['texto_bonus_mobile']?></span>
+                </div>
             </div>
             <?php endforeach ?>                
         <?php endif; ?>

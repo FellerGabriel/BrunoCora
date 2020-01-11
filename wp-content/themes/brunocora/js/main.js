@@ -164,6 +164,17 @@ jQuery(document).ready(function($){
                 $(".perguntas_container .resposta").slideUp("500");
             }
       })
+
+      jQuery.instagramFeed({
+        'username': 'treinador_brunocora',
+        'container': ".fotos_instagram",
+        'items': 9,
+        'display_profile': false,
+        'display_biography': false,
+        'display_igtv': false,
+        'styling':false,
+        'items_per_row': 4
+        });
 });
 
 function abreVideo(id){

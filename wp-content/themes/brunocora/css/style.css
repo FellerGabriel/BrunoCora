@@ -95,7 +95,8 @@ Description: Site do Bruno
 .container{
 	width: 1530px;
 	margin: 0 auto;
-	max-width: 100%;
+    max-width: 100%;
+    padding: 0 60px;
 }
 
 .tra{
@@ -1070,6 +1071,10 @@ footer .footer_container .info_contato input.submit_footer:hover{
     padding-top: 50px;
 }
 
+.blog_sidebar .close_categoria{
+    display: none;
+}
+
 .container_categorias{
     display: flex;
     flex-direction: column;
@@ -1108,7 +1113,7 @@ footer .footer_container .info_contato input.submit_footer:hover{
 .blog_content li.single_post{
     border: 0.5px solid #d7d7d7;
     margin: 10px 0 30px;
-    max-width: 360px;
+    max-width: 260px;
 }
 
 .blog_content li.single_post:hover{
@@ -1243,7 +1248,7 @@ footer .footer_container .info_contato input.submit_footer:hover{
 }
 
 .blog_content .single_post{
-    width: calc(100% - 360px)
+    width: calc(100% - 260px)
 }
 
 .blog_content .single_post .title_post h1{

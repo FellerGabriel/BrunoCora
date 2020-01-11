@@ -23,7 +23,7 @@
             <h3 class="titulo_footer">Blog</h3>
             <ul>            
                 <?php foreach($latest_posts as $post):?>
-                <a href="<?= $post->guid; ?>">
+                <a href="<?= $URL_BASE . "/" .$post->post_name; ?>">
                     <li class="post_footer">
                         <?php
                             $imgpost =  getImage($post->ID, 'thumb_blog');

@@ -4,10 +4,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
 	<title><?php echo wp_title();?></title>
-
-    <!-- FONTE DO SITE -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Montserrat:400,700" rel="stylesheet"> -->
 	<?php wp_head();?>	
 </head>
 <?php
@@ -23,10 +19,10 @@ $URL_BASE = get_bloginfo('template_directory');
 						<div class="logo">
 							<a href="<?php echo home_url();?>"><img src="<?php echo $URL_BASE . '/images/logo.png';?>" alt="" /></a>
 		        		</div>	        
-		        		<li class="consultoria"><a href="#consultoria">Consultoria</a></li>
-		        		<li><a href="<?php echo home_url() . "#resultados";?>">Resultados</a></li>
-		        		<li><a href="#planos">Planos</a></li>
-		        		<li><a href="#faq">Faq</a></li>
+		        		<li class="consultoria"><a href="<?= is_front_page() ? '#consultoria' : home_url() . '#consultoria'?>">Consultoria</a></li>
+		        		<li><a href="<?= is_front_page() ? '#resultados' : home_url() . '#resultados'?>">Resultados</a></li>
+		        		<li><a href="<?= is_front_page() ? '#planos' : home_url() . '#planos'?>">Planos</a></li>
+		        		<li><a href="<?= is_front_page() ? '#faq' : home_url() . '#faq'?>">Faq</a></li>
 		        		<li><a href="http://bruno.localhost/blog">Blog</a></li>
 						<li class="area_aluno"><a href="">Area do Aluno</a></li>
 						<li class="comecar_agora"><a href="">Começar Agora</a></li>
@@ -40,10 +36,10 @@ $URL_BASE = get_bloginfo('template_directory');
 		<div class="menu_mobile">
 			<i class="fa fa-times close_menu"></i>
 			<ul>
-				<li class="consultoria"><a href="#consultoria">Consultoria</a></li>
-				<li><a href="#resultados">Resultados</a></li>
-				<li><a href="#planos">Planos</a></li>
-				<li><a href="#faq">Faq</a></li>
+				<li class="consultoria"><a href="<?= is_front_page() ? '#consultoria' : home_url() . '#consultoria'?>">Consultoria</a></li>
+				<li><a href="<?= is_front_page() ? '#resultados' : home_url() . '#resultados'?>">Resultados</a></li>
+				<li><a href="<?= is_front_page() ? '#planos' : home_url() . '#planos'?>">Planos</a></li>
+				<li><a href="<?= is_front_page() ? '#faq' : home_url() . '#faq'?>">Faq</a></li>
 				<li><a href="http://bruno.localhost/blog">Blog</a></li>
 				<li class="area_aluno"><a href="">Area do Aluno</a></li>
 				<li class="comecar_agora"><a href="">Começar Agora</a></li>					

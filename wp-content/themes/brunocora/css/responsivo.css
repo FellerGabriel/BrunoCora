@@ -20,7 +20,11 @@
     .blog_search_content h2, 
     .blog_search_content h1{
         margin-bottom: 10px;
-    }
+   }
+
+   .texto_newsletter{
+        font-size: 20px;
+   }
 }
 @media only screen and (max-width: 1200px) {
     .container{
@@ -140,6 +144,10 @@
 
 @media only screen and (max-width: 768px) {  
     
+    .container{
+        padding: 0px;
+    }
+
     .blog_footer{
         display: none;
     }
@@ -271,10 +279,35 @@
 
     .bonus_each:nth-child(odd){
         justify-content: flex-start;
+        align-items: center;
     }
 
     .bonus_each:nth-child(even){
-        justify-content: flex-end;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .bonus_each img{
+        max-width: 145px;
+    }
+
+    .bonus_each_text{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        max-width: 50%;
+        margin-left: 12px;
+    }
+
+    .bonus_each_text .titulo{
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .bonus_each_text .texto{
+        font-size: 12px;
     }
 
 
@@ -585,7 +618,7 @@
         margin-top: 0px;
     }
 
-    .close_categoria{
+    .blog_sidebar .close_categoria{
         display: block;
         text-align: right;
         width: 100%;
@@ -623,13 +656,17 @@
 
 }
 
-@media only screen and (max-width: 320px) {  
+@media only screen and (max-width: 340px) {  
     .planos .comprar_agora{
         font-size: 11px;
     }
 
     .depoimentos_bg h2{
         font-size: 13px;
+    }
+
+    .planos .comprar_agora{
+        font-size: 9px;
     }
 
 

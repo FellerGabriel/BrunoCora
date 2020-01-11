@@ -208,7 +208,7 @@ $busca = (isset($_GET['busca']) && $_GET['busca'] != '') ? $_GET['busca'] : '';
 if(jQuery(window).width() > 1200){
     jQuery('.post-masonary-content').masonry({
         itemSelector: '.single_post',
-        columnWidth: 390
+        columnWidth: 280
     });
 }
 </script>
